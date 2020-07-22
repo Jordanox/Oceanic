@@ -1,0 +1,245 @@
+
+#ub {
+	width: 20px;
+	height: 20px;
+	float: center;
+	margin-left: 10px;
+}
+#tl {
+	font-size: 14px;
+	text-align: bottom;
+	margin:auto;
+}
+#tlf {
+	width: 20px;
+	height: 20px;	
+	float: left;
+}
+#derecha {
+	float: right;
+	padding: 7px;
+
+}
+#logo {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+.in {
+
+	border-top: 20px;
+	border-bottom: 10px;
+}
+#ti1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+}
+#subti {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+}
+#titulo {
+	float:left;
+
+}
+.direccion {
+	margin-bottom: 20px;
+}
+.inic {
+
+	background-image: url(img/foin2.jpg);
+   background-size: cover;
+   height: 100%;
+   width: 100% ;
+   overflow: hidden;
+   text-align: center;
+    background-size: cover;
+}
+}
+  }
+#formulario {
+	font-size: 30px;
+	font-family: calibri;
+	display: block;
+	text-align: center;
+}
+
+a {
+	font-size: 15px;
+	text-decoration: none;
+	font-family: calibri;
+}
+
+
+nav {
+	margin: 20px 90px 20px 90px;
+
+}
+
+form{
+	margin: 0 auto;
+	width: 900px;
+	background-color: white;
+	color: #3D3D3D;
+	border-radius: 6px;
+	border-bottom: 2px solid #999;
+}
+input {
+}
+ label {
+ 	font-family: calibri;
+ 	font-size:20px;
+ 	margin: 0px 0px 10px 20px ;
+
+ }
+.btn {
+background: rgb(15,15,116);
+background: linear-gradient(90deg, rgba(15,15,116,1) 0%, rgba(0,212,255,1) 100%);
+ 	border-radius: 5px;
+ 	width: 100px;
+ 	height: 40px;
+ 	color: white;
+ 	font-weight: 500;
+ 	border:0;
+ 	margin: 10px 10px 10px 35px;
+
+ }
+h1{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size:30px;
+	color:#606060;
+}
+h6 {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size:10px;
+	color:#7E7E7E;
+}
+
+#tit1{
+	margin-bottom: 0px;
+}
+
+#art1{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin: 50px 200px 50px 200px;
+	color: #3B3B3B;
+}
+footer{
+	background-color: #E8E0D3;
+	font-family: 'Montserrat', sans-serif;
+}
+#social{
+	margin: 50px 300px 50px 300px;
+	padding: 50px;
+}
+article{
+	margin:20px 90px 20px 90px;
+	border:8px solid #EAEAEA;
+	border-radius: 15px;
+}
+
+
+
+
+i {
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+
+i:before, i:after {
+	content: '⥪';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: dodgerblue;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input.slider {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	pointer-event: none;
+	z-index: 0;
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
