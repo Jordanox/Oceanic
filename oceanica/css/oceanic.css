@@ -50,15 +50,22 @@
 .inic {
 
 	background-image: url(img/foin2.jpg);
-   background-size: cover;
-   height: 100%;
-   width: 100% ;
-   overflow: hidden;
-   text-align: center;
+  	width: 100% ;
+  	height: 100%;
+  	overflow: hidden;
+   	text-align: center;
     background-size: cover;
 }
+#inici {
+
+	background-image: url(img/foin2.jpg);
+  	width: 100% ;
+  	height: 100%;
+  	overflow: hidden;
+   	text-align: center;
+    background-size: cover;
 }
-  }
+
 #formulario {
 	font-size: 30px;
 	font-family: calibri;
@@ -67,6 +74,7 @@
 }
 
 a {
+	color: #6A6A6A;
 	font-size: 15px;
 	text-decoration: none;
 	font-family: calibri;
@@ -76,6 +84,9 @@ a {
 nav {
 	margin: 20px 90px 20px 90px;
 
+}
+.cabe {
+	margin: 20px 90px 20px 90px;
 }
 
 form{
@@ -94,7 +105,7 @@ input {
  	margin: 0px 0px 10px 20px ;
 
  }
-.btn {
+.btn1 {
 background: rgb(15,15,116);
 background: linear-gradient(90deg, rgba(15,15,116,1) 0%, rgba(0,212,255,1) 100%);
  	border-radius: 5px;
@@ -122,7 +133,12 @@ h6 {
 #tit1{
 	margin-bottom: 0px;
 }
+p {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 
+	color: #3B3B3B;
+}
 #art1{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -133,17 +149,85 @@ footer{
 	background-color: #E8E0D3;
 	font-family: 'Montserrat', sans-serif;
 }
+footer h1 {
+	font-size: 20px;
+}
 #social{
-	margin: 50px 300px 50px 300px;
-	padding: 50px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	border-top: 5px solid #C2C2C2;
 }
 article{
 	margin:20px 90px 20px 90px;
 	border:8px solid #EAEAEA;
 	border-radius: 15px;
 }
+#enlaces {
+	margin: 0px auto;
+	width: 250px;
+	height: 300px;
+	padding: 40px;
+	border-radius: 25px;
+	transition: transform .8s;
+}
+#enlaces:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.descubre {
+	margin: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
 
+.cont1 {
+	display: flex;
 
+}
+.colum1{
+	width: 500px;
+	text-align: center;
+}
+.colum1 h2 {
+	font-size: 12px;
+}
+.colum2 {
+	width: 500px;
+}
+.colim2 h1 {
+	
+}
+.colum3 {
+	width: 500px;
+}
+.artfo {
+	padding: 0px 5px;
+	text-align: left;
+}
+#media {
+	width: 30px;
+	height: 30px;
+	padding: 5px 25px 5px 10px;
+	transition: transform .5s;
+}
+
+#media:hover {
+    transform: scale(1.3);
+    opacity: 0.9;
+}
+
+#media2 {
+	width: 25px;
+	height: 25px;
+	padding: 5px 5px 5px 5px;
+	transition: transform .5s;
+}
+#media2:hover {
+    transform: scale(1.3);
+    opacity: 0.9;
+}
 
 
 i {
@@ -154,6 +238,8 @@ i {
 	overflow: hidden;
 	border-radius: 5px;
 	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+	margin: 0 auto;
+	padding: 20px
 }
 
 i:before, i:after {
@@ -164,7 +250,8 @@ i:before, i:after {
 	z-index: 2;
 	width: 2rem;
 	height: 2rem;
-	background: dodgerblue;
+	background: rgb(24,184,255);
+	background: linear-gradient(0deg, rgba(24,184,255,1) 0%, rgba(253,45,227,1) 100%);
 	color: white;
 	border-radius: 50%;
 	display: flex;
@@ -199,11 +286,11 @@ input.slider {
 	z-index: 1;
 }
 
-input:focus {
+input.slider:focus {
 	outline: none;
 }
 
-input:after {
+input.slider:after {
 	content: attr(title);
 	position: absolute;
 	top: 1rem;
@@ -215,7 +302,7 @@ input:after {
 	border-radius: 5px;
 }
 
-input:not(checked):before {
+input.slider:not(checked):before {
 	content: '';
 	position: absolute;
 	width: 2rem;
@@ -225,21 +312,57 @@ input:not(checked):before {
 	left: calc(-100% + 1rem);
 }
 
-input:checked:before {
+input.slider:checked:before {
 	display: none;
 	left: 1rem;
 }
 
-input:checked {
+input.slider:checked {
 	transform: translateX(0);
 	pointer-event: none;
 	z-index: 0;
 }
 
-input:checked + input:before {
+input.slider:checked + input:before {
 	left: -3rem;
 }
 
-input:checked + input ~ input:before {
+input.slider:checked + input ~ input:before {
 	display: none;
+}
+
+.arrow-up {
+	transform: rotate(-90deg);
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 999;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 42px;
+	background: #fff;
+	color: #dfdfdf;
+	cursor: pointer;
+	border: 0;
+	border-radius: 0;
+	text-decoration: none;
+	transition: opacity .2s ease-out;
+	opacity: .5;
+	font-size: 32px;
+	border: 1px solid #fff;
+	box-shadow: 3px 2px 15px -4px rgba(0, 0, 0, .9);
+}
+
+#back-to-top:hover {
+	background: #dfdfdf;
+	color: #fff;
+	transition: all .3s ease-out;
+}
+
+#back-to-top.show {
+	opacity: 1;
 }
